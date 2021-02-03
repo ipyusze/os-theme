@@ -5,9 +5,27 @@ module.exports = {
             // nav-bar settings
             navBar : {
                 display : {
-                    blog : true,
-                    shop : true,
-                    user : true
+                    home: false,
+                    blog : false,
+                    shop : false,
+                    cart: true,
+                    user : false,
+                    language: false
+                },
+                mobileDisplay: {
+                    home: true,
+                    blog : false,
+                    shop : false,
+                    cart: true,
+                    user : false,
+                }
+            },
+            footer: {
+                display: {
+                    blog : false,
+                    shop : false,
+                    cart: true,
+                    user : false
                 }
             },
             // Key - widget name
@@ -128,11 +146,11 @@ module.exports = {
                 terms_and_conditions : "terms_and_conditions"  // the file name id of your terms and condition (path: /public/assets/text_files)
             },
             social : {
-                facebook : "https://facebook.com",
-                instagram : "https://instagram.com",
-                youtube : "https://youtube.com",
-                twitter : "https://twitter.com",
-                pinterest : "https://pinterest.com"
+                facebook : "https://www.facebook.com/itdogcom",
+                instagram : "https://www.instagram.com/itdogcom",
+                youtube : false,
+                twitter : false,
+                pinterest : false
             }
         }
     }
