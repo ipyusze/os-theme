@@ -80,7 +80,8 @@ function Product(props){
             toggleLoading();
             // params
             let params = {
-                page : Math.ceil(products.length/15) + 1
+                page : Math.ceil(products.length/15) + 1,
+                ordering: "name|desc"
             };
             // filter by collection?
             if(!isNaN((selectedCollection || {}).value)) params.collections = selectedCollection.value;
